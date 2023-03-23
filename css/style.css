@@ -15,6 +15,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -25,6 +31,10 @@ a {
 }
 .header-main {
   background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -97,4 +107,95 @@ body {
 }
 .main {
   flex-grow: 1;
+}
+.top {
+  color: #fff;
+  text-align: center;
+  padding-top: 247px;
+  padding-bottom: 50px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+.title {
+  padding-bottom: 40px;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.top__link {
+  background-color: #151515;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 23px;
+  max-width: 430px;
+  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in;
+}
+.top__link:hover {
+  background-color: #0066ff;
+}
+.swiper::after {
+  content: "";
+  background: rgba(21, 21, 21, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 5;
+}
+.swiper-wrapper {
+  background: rgba(21, 21, 21, 0.6);
+}
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.swiper-pagination-bullet {
+  width: 120px;
+  height: 3px;
+  background-color: #151515;
+  border-radius: 0;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  height: 6px;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 15px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 38px;
+}
+.why-lease {
+  padding: 150px 0;
+}
+
+.why-lease__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.why-lease__img {
+  margin-bottom: 30px;
+}
+.why-lease__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.why-leas-text {
+  text-align: left;
 }
